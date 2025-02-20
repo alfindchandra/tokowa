@@ -1,7 +1,7 @@
-@extends('dashboard.navbarproduk')
+@extends('dashboard.navbarpro')
 
 
-@section('content')
+@section('tentang')
 <div class="container py-20">
     <div class="bg-gray-100 text-gray-900">
     <div class="max-w-5xl mx-auto p-6">

@@ -13,7 +13,10 @@
         @include('components.navbar')
 
          <div class="container mt-4">
-               @yield('content')
+               @yield('tentang')
+               @yield('kontak')
+               @yield('produk')
+               @yield('keranjang')
          </div>
 
 
