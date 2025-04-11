@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
+
         @include('components.navbar')
         @include('components.jumbotron')
         @include('components.kerjasama')

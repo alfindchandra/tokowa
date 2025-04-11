@@ -1,0 +1,21 @@
+#logoutForm {
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 100ms ease-out, opacity 100ms ease-out;
+    display: none;
+}
+
+#logoutForm.entering {
+    display: block;
+}
+
+#logoutForm.enter-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+#logoutForm.leaving {
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 75ms ease-in, opacity 75ms ease-in;
+}

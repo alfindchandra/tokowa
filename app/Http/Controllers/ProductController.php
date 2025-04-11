@@ -120,8 +120,13 @@ public function addToCart(Request $request, Product $product)
     }
     public function index()
     {
-        $products = Product::all();
-        return view('welcome', compact('products'));
+        
+        $latestProducts = Product::where('categori', 'bahan pokok')
+    ->orderBy('updated_at', 'desc')
+    ->take(10)
+    ->get();
+
+        return view('welcome', compact('latestProducts'));
 
     }
 
@@ -168,6 +173,10 @@ public function store(Request $request)
     $product->save();
 
     return redirect()->route('admin.tambah')->with('success', 'Product created successfully');
+}
+
+public function login(){
+    return view('auth/login');
 }
  
     /**
